@@ -8,4 +8,4 @@
 * SCSS/SASS
 * Prepros
 
-The finished project can be viewed at the [ link](https://flowr1x.github.io/loft-house-web/).<br>
+The finished project can be viewed at the [link](https://flowr1x.github.io/task-2/).<br>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css">    
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#" class="form" method="get" enctype="multipart/form-data"s novalidate>
+            <fieldset class="form__field form__field_transport">
+                <legend>Транспортные средства и водители</legend>
+                <div class="form__input">
+                    <label for="gos-number">Гос-номер</label>
+                    <input type="text" 
+                        id="gos-number" 
+                        placeholder="Укажите гос-номер" 
+                        name="gos-number"
+                        data-min-length="8"
+                        >
+                </div>
+                <div class="form__input">
+                    <label for="transport">Транспортное средство</label>
+                    <input type="text" 
+                        id="transport" 
+                        placeholder="Транспортное средство" 
+                        name="transport"
+                        data-required="true">
+                </div>
+                <div class="form__input">
+                    <label for="date">Ориентировочная дата прибытия к покупателю</label>
+                    <input type="date" 
+                        id="date" 
+                        placeholder="Дата" 
+                        name="date"
+                        data-required="true">
+                </div>
+            </fieldset>
+            <fieldset class="form__field form__field_user">
+                <legend>Данные о водителе</legend>
+                <div class="form__input">
+                    <label for="user-name">ФИО</label>
+                    <input type="text" 
+                        id="user-name" 
+                        placeholder="Укажите ФИО водителя" 
+                        name="user-name"
+                        data-required="true">
+                </div>
+                <div class="form__input">
+                    <label for="pas-series">Паспортные данные</label>
+                    <div class="form__block">
+                        <div class="form__input">
+                            <input type="text" 
+                                id="pas-series" 
+                                placeholder="Серия" 
+                                name="pas-series"
+                                data-min-length="4">
+                        </div>
+                        <div class="form__input">
+                            <input type="text" 
+                                id="pas-number" 
+                                placeholder="Номер" 
+                                name="pas-number"
+                                data-min-length="6">
+                        </div>
+                    </div>
+                </div>
+                <div class="form__input">
+                    <label for="who">Кем выдан</label>
+                    <input type="text" 
+                        id="who" 
+                        placeholder="Кем выдан" 
+                        name="who"
+                        data-required="true">
+                </div>
+                <div class="form__input">
+                    <label for="when">Когда выдан</label>
+                    <input type="text" 
+                        id="when" 
+                        placeholder="Когда выдан" 
+                        name="when"
+                        data-required="true">
+                </div>
+            </fieldset>
+            <div class="form__buttons">
+                <button class="form__btn" type="submit">Отправить</button>
+                <button class="form__btn" type="reset">Отменить</button>
+            </div>
+            <div class="form__close">
+                <span></span>
+                <span></span>
+            </div>
+        </form>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/mask.js"></script>
+</body>
+</html>
